@@ -1,60 +1,150 @@
-# 🛒 Ecommerce Sales Analytics Project
+# 🛒 E-Commerce Sales Analytics Project
 
-📊 A complete **Ecommerce Sales Analytics** project covering **data cleaning, visualization, and reporting** using **Python (Matplotlib/Seaborn)** and **Power BI**.
+📊 An end-to-end **E-Commerce Sales Analytics** project that transforms raw data into actionable business insights using **Python, MySQL, Streamlit, and Power BI**.
 
+This project demonstrates the complete data pipeline — from **data cleaning and analysis** to **interactive dashboards and reporting**.
 ---
 
-## 📂 Project Structure
-- **data/** → contains datasets (CSV/Excel).
-- **reports/** → includes Power BI reports and exported dashboards.
-- **scripts/** → Python scripts for analysis & visualization (Phase 4).
-- **docs/** → documentation and references.
+## 📸 Project Preview
+
+### 📊 Power BI Dashboard
+
+![Power BI Dashboard](visuals/Dashboard.png)
+
+### 📈 Python Visualization
+
+![Sales by Category](visuals/sales_by_category.png)
 
 ---
 
 ## 🚀 Features
-- ✅ Python-based advanced visualizations:
-  - Sales by Category
-  - Yearly Sales Trend
-  - Top 10 Sub-Categories by Profit
-  - Profit by Region & Category (Heatmap)
-  - Discount vs Profit (Scatter Plot with reference lines)
-- ✅ Power BI Dashboard:
-  - Interactive filters (Year, Region, Segment)
-  - KPIs: Total Sales, Total Profit, Avg Discount
-  - Drill-down analytics
-- ✅ Clean modular structure (easy to extend)
+
+### 🔹 Data Processing
+
+* Cleaned and preprocessed **10,000+ records** using Pandas
+* Handled missing values, duplicates, and date formatting
+* Created new features like **Profit Margin & Time-based metrics**
+
+### 🔹 Exploratory Data Analysis (EDA)
+
+* Sales distribution by category and region
+* Monthly and yearly sales trends
+* Top-performing customers and products
+* Loss-making product identification
+
+### 🔹 Interactive Dashboards
+
+* 📊 **Streamlit Dashboard**
+
+  * Dynamic filters (Category, Region, Year)
+  * Real-time SQL queries
+  * Multiple visualizations (bar charts, heatmaps, scatter plots)
+
+* 📈 **Power BI Dashboard**
+
+  * KPI cards (Sales, Profit, Orders)
+  * Drill-down analysis
+  * Interactive slicers (Region, Segment, Year)
 
 ---
 
-## 🛠 How to Run
-1. Clone the repo:
-   ```bash
+## 🧰 Tech Stack
+
+* **Python** → Pandas, NumPy, Matplotlib, Seaborn
+* **Database** → MySQL
+* **Visualization** → Power BI, Streamlit
+* **Tools** → Git, GitHub
+
+---
+
+## 📂 Project Structure
+
+```
+ecommerce-sales-analytics/
+│
+├── data/              # Raw and cleaned datasets
+├── notebooks/           # Python scripts (cleaning + EDA)
+├── visualization_dashboard.py     #Streamlit Dashboard         
+├── visuals/           # Power BI dashboards & images
+├── ecommerce_db.sql   # Database
+├── powerbi.pbix      #Powerbi Dashboard
+├── README.md
+```
+
+---
+
+## ▶️ How to Run
+
+1. Clone the repository:
+
+   ```
    git clone https://github.com/MuhammadShayan8401/ecommerce-sales-analytics.git
+   ```
 
-Navigate into the project folder:
+2. Navigate into the project:
 
-cd ecommerce-sales-analytics
+   ```
+   cd ecommerce-sales-analytics
+   ```
 
-Run Python scripts inside scripts/:
+3. Install dependencies:
 
-python phase4_visuals.py
+   ```
+   pip install -r requirements.txt
+   ```
 
+4. Run Python analysis:
 
-Open Power BI dashboard (.pbix) from the reports/ folder.
+   ```
+   python scripts/phase4_visuals.py
+   ```
 
-📌 Notes
+5. Launch Streamlit dashboard:
 
-Update database credentials (host, user, password) inside Python scripts if connecting to MySQL.
+   ```
+   streamlit run visualization_dashboard.py
+   ```
 
-Dataset used: Superstore (Ecommerce Orders/Sales).
+6. Open Power BI dashboard:
 
-👨‍💻 Author
+   * Go to `visuals/`
+   * Open `.pbix` file in Power BI Desktop
 
-Muhammad Shayan Ahmed
+---
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/muhammad-shayan-ahmed-05b847281/)
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github)](https://github.com/MuhammadShayan8401)
+## 📈 Key Business Insights
 
+* 📊 **Technology category** generated the highest sales
+* 💸 High **discounts negatively impact profit**
+* 🌍 Some regions show **high sales but low profitability**
+* 👥 A small percentage of customers contribute significantly to revenue
+
+---
+
+## 📌 Notes
+
+* Dataset used: **Superstore Dataset (~10,000 records)**
+* Update database credentials before running MySQL integration
+* Ensure Power BI Desktop is installed to view `.pbix` files
+
+---
+
+## 🚀 Future Improvements
+
+* 🔮 Add **Machine Learning models** for sales prediction
+* 🌐 Deploy dashboard using **Streamlit Cloud**
+* 🔄 Integrate **real-time data pipeline**
+* 📊 Enhance UI with advanced dashboard design
+
+---
+
+## 👨‍💻 Author
+
+**Muhammad Shayan Ahmed**
+
+🔗 LinkedIn: https://www.linkedin.com/in/muhammad-shayan-ahmed-05b847281/
+💻 GitHub: https://github.com/MuhammadShayan8401
+
+---
 
 ⭐ If you found this project useful, consider giving it a star on GitHub!
